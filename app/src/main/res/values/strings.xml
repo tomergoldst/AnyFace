@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AnyFace</string>
+    <string name="channel_name">Alert Notifications</string>
+    <string name="channel_description">Receive alert notifications</string>
+    <string name="run_detection">Run Detection</string>
+    <string name="all">All</string>
+    <string name="with">With</string>
+    <string name="without">Without</string>
+    <string name="detection_completed_message">%1$d / %2$d detected</string>
+    <string name="alert_dialog_ok">Ok</string>
+</resources>
