@@ -1,7 +1,7 @@
 # AnyFace
 Detect photos with faces
 
-When clicking 'run detection' all photos will processed on the background and you will be notified you when done
+When clicking 'run detection' all photos will processed on the background and you will be notified when done
 
 Check logs to see ongoing photos processing progress 
 
