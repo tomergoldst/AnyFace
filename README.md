@@ -3,6 +3,8 @@ Detect photos with faces
 
 When clicking 'run detection' all photos will processed on the background and you will be notified you when done
 
+Check logs to see ongoing photos processing progress 
+
 ## Instructions
 This sample app uses Firebase ML Kit and thus you have to connect this project to your Firebase account in order to run it.
 If you have your `google-services.json` file simply copy it to the 'app' folder
