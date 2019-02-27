@@ -1,5 +1,5 @@
 # AnyFace
-Detect faces in photos
+Detect photos with faces
 
 When clicking 'run detection' all photos will processed on the background and you will be notified you when done
 
