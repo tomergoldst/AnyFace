@@ -22,6 +22,7 @@ See https://firebase.google.com/docs/ml-kit/android/detect-faces for more inform
     * LiveData
     * WorkManager
 * Glide
+* ML Kit: Face Detection Moudle for Firebase
 
 ### License
 ```
