@@ -2,7 +2,9 @@ package com.tomergoldst.anyface.ui
 
 import android.app.Application
 import android.os.Environment
-import androidx.lifecycle.*
+import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
 import com.tomergoldst.anyface.MyApplication
@@ -52,17 +54,21 @@ class MainViewModel(
 
             val externalDirectory = Environment
                 .getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).toString()
-            val anyVisionDirectory = String.format("%s/%s", externalDirectory, Config.PHOTOS_FOLDER)
+            val anyFaceDirectory = String.format("%s/%s", externalDirectory, Config.PHOTOS_FOLDER)
 
-            val file = File(anyVisionDirectory)
+            val file = File(anyFaceDirectory)
 
             val photos: MutableList<Photo> = ArrayList()
 
-            for (fileEntry in file.listFiles()) {
-                photos.add(Photo(name = fileEntry.name, path = fileEntry.absolutePath))
-            }
+            val files = file.listFiles()
 
-            repository.savePhotos(photos)
+            if (!files.isNullOrEmpty()){
+                for (fileEntry in files) {
+                    photos.add(Photo(name = fileEntry.name, path = fileEntry.absolutePath))
+                }
+
+                repository.savePhotos(photos)
+            }
 
             _dataLoading.postValue(false)
         }

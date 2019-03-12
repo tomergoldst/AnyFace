@@ -6,10 +6,14 @@ When clicking 'run detection' all photos will processed on the background and yo
 Check logs to see ongoing photos processing progress 
 
 ## Instructions
+1. Connect to Firebase
 This sample app uses Firebase ML Kit and thus you have to connect this project to your Firebase account in order to run it.
 If you have your `google-services.json` file simply copy it to the 'app' folder
 
-See https://firebase.google.com/docs/ml-kit/android/detect-faces for more information and help on how to add firebase
+    See https://firebase.google.com/docs/ml-kit/android/detect-faces for more information and help on how to add firebase
+
+2. Create a new folder named `anyface` in your's downloads folder and put the images there 
+
 
 ## Tech stack
 * Kotlin
