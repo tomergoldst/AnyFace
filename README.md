@@ -7,8 +7,9 @@ Check logs to see ongoing photos processing progress
 
 ## Instructions
 1. Connect to Firebase
-This sample app uses Firebase ML Kit and thus you have to connect this project to your Firebase account in order to run it.
-If you have your `google-services.json` file simply copy it to the 'app' folder
+
+    This sample app uses Firebase ML Kit and thus you have to connect this project to your Firebase account in order to run it.
+    If you have your `google-services.json` file simply copy it to the 'app' folder
 
     See https://firebase.google.com/docs/ml-kit/android/detect-faces for more information and help on how to add firebase
 
